@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: hsl(30deg, 38%, 92%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+body p {
+  font-size: 14px;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 600px;
+  height: 450px;
+  background-color: #fff;
+}
+.card .image-container img {
+  height: 100%;
+  width: 100%;
+}
+.card .content {
+  width: 100%;
+  padding: 30px;
+}
+.card .content h1 {
+  font-family: "Fraunces", serif;
+  margin: 25px 0;
+  color: hsl(212deg, 21%, 14%);
+  line-height: 2rem;
+}
+.card .content p.first {
+  text-transform: uppercase;
+  color: hsl(228deg, 12%, 48%);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  letter-spacing: 5px;
+}
+.card .content p {
+  color: hsl(228deg, 12%, 48%);
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.3rem;
+}
+.card .content .prices {
+  display: flex;
+}
+.card .content .prices h1 {
+  color: hsl(158deg, 36%, 37%);
+}
+.card .content .prices p {
+  text-decoration: line-through;
+  margin: auto;
+}
+.card .content button {
+  display: flex;
+  border: none;
+  width: 100%;
+  border-radius: 5px;
+  padding: 15px;
+  justify-content: center;
+  background-color: hsl(158deg, 36%, 37%);
+  color: #fff;
+}
+.card .content button span {
+  margin-left: 15px;
+  color: #fff;
+  font-weight: 700;
+}
